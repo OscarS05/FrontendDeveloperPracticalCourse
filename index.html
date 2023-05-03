@@ -25,14 +25,15 @@
         .login {
             background: rgb(198,255,240);
             background: linear-gradient(0deg, rgba(198,255,240,1) 10%, rgba(57,199,232,1) 70%);
-            
+
             /* background: rgb(138,255,224); */
             /* background: linear-gradient(0deg, rgba(138,255,224,1) 10%, rgba(57,232,187,1) 70%); */
-            
+
             /* background: rgb(54,33,173); */
             /* background: linear-gradient(157deg, rgba(54,33,173,1) 0%, rgba(93,36,238,1) 21%, rgba(6,8,78,1) 47%, rgba(192,140,255,1) 74%); */
-                        
-            /*background-repeat: no-repeat;
+
+            /* background-image: url(./myAssets/woman.svg);
+            background-repeat: no-repeat;
             background-size: 70%;
             background-position: left center; */
             width: 100%;
@@ -47,13 +48,21 @@
             background-color: white;
             border-radius: 8px;
             position: relative;
-            bottom: 28px;
+            z-index: 4;
+            bottom: 578px;
+            left: 20px;
         }
         .logo {
             width: 150px;
             margin-bottom: 48px;
             justify-self: center;
             display: none;
+        }
+        .woman {
+            height: 30%;
+            position: relative;
+            z-index: 2;
+            right: 334px;
         }
         .title {
             font-size: var(--lg);
@@ -75,6 +84,8 @@
             margin-bottom: 32px;
             margin-left: 20px;
             margin-right: 20px;
+            position: relative;
+            z-index: 3;
         }
         .label {
             font-size: var(--sm);
@@ -137,9 +148,10 @@
 </head>
 <body>
     <div class="login">
+        <img src="./myAssets/woman.svg" alt="woman" class="woman">
         <div class="form-container">
             <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
-            
+
             <h1 class="title">Create a new password</h1>
             <p class="subtitle">Enter a new password</p>
 
