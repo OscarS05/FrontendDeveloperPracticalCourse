@@ -21,7 +21,6 @@
         body {
             margin: 0;
             font-family:'Quicksand', sans-serif;
-            overflow: hidden;
         }
         .login {
             background: rgb(198,255,240);
@@ -41,64 +40,41 @@
             display: grid;
             place-items: center;
         }
-        .custom-shape-divider-bottom-1682775181 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
-
-        .custom-shape-divider-bottom-1682775181 svg {
-            position: relative;
-            display: block;
-            width: calc(100% + 1.3px);
-            height: 150px;
-        }
-
-        .custom-shape-divider-bottom-1682775181 .shape-fill {
-            fill: #FFFFFF;
-        }
-
-        /** For mobile devices **/
-        @media (max-width: 767px) {
-            .custom-shape-divider-bottom-1682775181 svg {
-                width: calc(100% + 1.3px);
-                height: 63px;
-            }
-        }
         .form-container {
             display: grid;
             grid-template-rows: auto 1fr auto;
-            width: 360px;
+            width: 300px;
             background-color: white;
             border-radius: 8px;
+            position: relative;
+            bottom: 28px;
         }
         .logo {
-            width: 156px;
-            margin-bottom: 16px;
+            width: 150px;
+            margin-bottom: 48px;
             justify-self: center;
             display: none;
-            margin-top: 38px;
         }
         .title {
             font-size: var(--lg);
-            margin-bottom: 4px;
+            margin-bottom: 12px;
+            margin-top: 20px;
             text-align: center;
         }
         .subtitle {
             color: var(--very-light-pink);
             font-size: var(--md);
             font-weight: 300;
-            margin: 0;
+            margin-top: 0;
+            margin-bottom: 32px;
             text-align: center;
         }
         .form {
             display: flex;
             flex-direction: column;
-            margin: 38px;
-            margin-top: 30px;
+            margin-bottom: 32px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
         .label {
             font-size: var(--sm);
@@ -109,25 +85,45 @@
             background-color: var(--text-input-field);
             border: none;
             border-radius: 8px;
-            height: 28px;
+            height: 30px;
             font-size: var(--md);
             padding: 6px;
             margin-bottom: 12px;
-            border: 1px solid rgb(190, 190, 190);
+            /* border: 1px solid rgb(190, 190, 190); */
         }
         .primary-button {
-            background-color: rgba(71,214,177,1);
+            background-color: rgb(137 215 233);
             border-radius: 8px;
             border: none;
             color: var(--white);
             cursor: pointer;
             font-size: var(--md);
             font-weight: bold;
-            height: 46px;
+            height: 50px;
         }
         .login-button {
             margin-top: 14px;
             margin-bottom: 12px;
+        }
+        .custom-shape-divider-bottom-1683140039 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-bottom-1683140039 svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 110px;
+            transform: rotateY(180deg);
+        }
+
+        .custom-shape-divider-bottom-1683140039 .shape-fill {
+            fill: #FFFFFF;
         }
         @media (max-width: 640px) {
             .logo {
@@ -157,11 +153,11 @@
             <input type="submit" value="Confirm" class="primary-button login-button">
             </form>
         </div>
+        <div class="custom-shape-divider-bottom-1683140039">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
     </div>
-    <!-- <div class="custom-shape-divider-bottom-1682775181">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-        </svg>
-    </div> -->
 </body>
 </html>
