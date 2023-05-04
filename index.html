@@ -51,13 +51,13 @@
             position: relative;
             z-index: 4;
             bottom: 1250px;
-            left: 1px;
         }
         .logo {
             width: 150px;
-            margin-bottom: 48px;
+            /* margin-bottom: 48px; */
             justify-self: center;
             display: none;
+            margin-top: 12px;
         }
         .title {
             font-size: var(--lg);
@@ -98,7 +98,6 @@
         }
         .blob {
             position: relative;
-            left: 1px;
             z-index: 2;
         }
         .nieve {
@@ -106,6 +105,12 @@
             position: relative;
             bottom: 600px;
             z-index: 0;
+        }
+        .nieve-celu {
+            position: relative;
+            z-index: 0;
+            right: 40%;
+            display: none;
         }
         .primary-button {
             background-color: rgb(137 215 233);
@@ -145,14 +150,41 @@
             .logo {
                 display: block;
             }
+            .subtitle {
+                margin-bottom: 16px;
+            }
+            .input {
+                height: 28px;
+                margin-bottom: 10px;
+            }
+            .form {
+                margin-bottom: 28px;
+            }
+            .primary-button {
+                height: 48px;
+            }
             .form-container {
-                width: 286px;
+                width: 248px;
+                bottom: 366%;
+                right: 216px;
+            }
+            .blob {
+                height: 88%;
+                right: 210px;
+                bottom: 150%;
+            }
+            .nieve {
+                display: none;
+            }
+            .nieve-celu {
+                display: block;
             }
         }
     </style>
 </head>
 <body>
     <div class="login">
+        <img src="./myAssets/blob-scatter-haikei (1).svg" alt="nieve-celu" class="nieve-celu">
         <img src="./myAssets/blob-haikei (1).svg" alt="blob" class="blob">
         <img src="./myAssets/blob-scatter-haikei (3).svg" alt="nieve" class="nieve">
         <div class="form-container">
