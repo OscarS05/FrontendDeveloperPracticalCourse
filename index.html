@@ -47,7 +47,9 @@
             background-color: white;
             border-radius: 8px;
             position: relative;
-            bottom: 28px;
+            z-index: 4;
+            bottom: 500px;
+            left: 20px;
         }
         .logo {
             width: 150px;
@@ -75,6 +77,8 @@
             margin-bottom: 32px;
             margin-left: 20px;
             margin-right: 20px;
+            position: relative;
+            z-index: 3;
         }
         .label {
             font-size: var(--sm);
@@ -90,6 +94,11 @@
             padding: 6px;
             margin-bottom: 12px;
             /* border: 1px solid rgb(190, 190, 190); */
+        }
+        .blob {
+            position: relative;
+            left: 20px;
+            z-index: 2;
         }
         .primary-button {
             background-color: rgb(137 215 233);
@@ -137,9 +146,10 @@
 </head>
 <body>
     <div class="login">
+        <img src="./myAssets/blob-haikei (1).svg" alt="blob" class="blob">
+        <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
         <div class="form-container">
-            <img src="./logos/logo_yard_sale.svg" alt="logo" class="logo">
-            
+
             <h1 class="title">Create a new password</h1>
             <p class="subtitle">Enter a new password</p>
 
