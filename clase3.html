@@ -42,7 +42,7 @@
         .form-container {
             display: grid;
             grid-template-rows: auto 1fr auto;
-            width: 300px;
+            width: 322px;
             margin-bottom: 42px;
             border-radius: 8px;
             background-color: white;
@@ -76,6 +76,9 @@
             font-weight: bold;
             margin-bottom: 4px;
         }
+        .label:nth-child(1) {
+            margin-top: 38px;
+        }
         .input {
             background-color: var(--text-input-field);
             border: none;
@@ -104,7 +107,7 @@
         .secondary-button {
             height: 50px;
             width: 85%;
-            margin-bottom: 26px;
+            margin-bottom: 38px;
             justify-self: center;
             border-radius: 8px;
             border: 1px solid var(--sky-blue);
@@ -126,7 +129,7 @@
             position: relative;
             display: block;
             width: calc(100% + 1.3px);
-            height: 98px;
+            height: 85px;
             transform: rotateY(180deg);
         }
         .custom-shape-divider-bottom-1683140039 .shape-fill {
@@ -149,6 +152,12 @@
             }
             .custom-shape-divider-bottom-1683140039 svg {
                 height: 70px;
+            }
+            .label:nth-child(1) {
+                margin-top: 0px;
+            }
+            .secondary-button {
+                margin-bottom: 26px;
             }
         }
     </style>
