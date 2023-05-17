@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Class 9</title>
     <style>
         :root {
             --very-light-pink: #C7C7C7;
@@ -23,25 +23,65 @@
             margin: 0;
             font-family:'Quicksand', sans-serif;
         }
+        .title {
+            font-size: var(--lg);
+            margin: 40px 0;
+        }
+        .my-order {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
         .my-order-container {
             width: 300px;
-            height: 100px;
         }
         .my-order-content {
-            width: 100%;
             background-color: var(--text-input-field);
-            border-radius: 6px;
+            border-radius: 8px;
+        }
+        .order {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 0 24px;
         }
         .order p {
+            display: flex;
+            flex-direction: column;
             font-weight: bold;
         }
-        .order p:nth-child(2) {
+        .order p span:last-child {
             color: var(--very-light-pink);
-            font-weight: 500;
             font-size: var(--sm);
+            font-weight: 500;
         }
-        .order div {
-            text-align: center;
+        .order p:last-child {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+        .product-card {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            margin: 24px 0;
+        }
+        .product-card img {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .product-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+        }
+        .product-info p:first-child {
+            color: var(--very-light-pink);
+        }
+        .product-info p:last-child {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -54,13 +94,9 @@
                 <div class="order">
                     <p>
                         <span>04.25.21</span>
-                    </p>
-                    <p>
                         <span>6 articles</span>
                     </p>
-                    <div>
-                        <p>$560.00</p>
-                    </div>
+                    <p>$560.00</p>
                 </div>
             </div>
 
