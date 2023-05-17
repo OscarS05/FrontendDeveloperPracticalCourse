@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Class 10</title>
+    <style>
+        :root {
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFF7;
+            --black: #000000;
+            --sky-blue: rgba(57,199,232,1);
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;
+        }
+        body {
+            margin: 0;
+            font-family:'Quicksand', sans-serif;
+        }
+        .my-order {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .title {
+            font-size: var(--lg);
+            margin: 40px 0;
+        }
+        .my-order-container {
+            width: 300px;
+        }
+        .my-order-content {
+            border-radius: 8px;
+            margin: 12px 0;
+        }
+        .order {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+        }
+        .order p {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+        }
+        .order p:nth-child(2) {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+        .order img {
+            align-self: center;
+            margin-left: 18px;
+        }
+        .order p span:last-child {
+            color: var(--very-light-pink);
+            font-size: var(--sm);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <h1 class="title">My order</h1>
+
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                        <span>04.25.21</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$560.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
+                </div>
+            </div>
+
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                        <span>04.25.21</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$560.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
+                </div>
+            </div>
+
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                        <span>04.25.21</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$560.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
+                </div>
+            </div>
+
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                        <span>04.25.21</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$560.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
+                </div>
+            </div>
+
+            <div class="my-order-content">
+                <div class="order">
+                    <p>
+                        <span>04.25.21</span>
+                        <span>6 articles</span>
+                    </p>
+                    <p>$560.00</p>
+                    <img src="./icons/flechita.svg" alt="arrow">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
