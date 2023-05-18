@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Clase 11</title>
+    <title>Clase 12</title>
     <style>
         :root {
             --very-light-pink: #C7C7C7;
@@ -23,47 +23,91 @@
             margin: 0;
             font-family:'Quicksand', sans-serif;
         }
+        .container {
+            width: 100%;
+        }
         .close {
             align-items: center;
             justify-content: center;
-            width: 40px;
-            height: 40px;
+            width: 10px;
+            height: 10px;
+            padding: 12px;
             display: flex;
             border-radius: 50%;
-            background-color: var(--hospital-green);
+            background-color: var(--white);
             position: absolute;
             z-index: 2;
+            top: 20px;
+            left: 20px;
+        }
+        .close:hover {
+            cursor: pointer;
         }
         .bike {
             width: 100%;
-            height: 50vh;
+            height: 360px;
             object-fit: cover;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
+            border-radius: 0 0 20px 20px;
             position: relative;
             z-index: 0;
+        }
+        .info {
+            margin: 24px 24px 0 24px;
+        }
+        .info p:nth-child(1) {
+            font-weight: bold;
+            margin: 0 0 4px 0;
+        }
+        .info p:nth-child(2){
+            color: var(--very-light-pink);
+            margin: 0 0 26px 0;
+        }
+        .info p:nth-child(3) {
+            color: var(--very-light-pink);
+            /* margin: 0 0 16px 0; */
+        }
+        .primary-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            border-radius: 8px;
+            border: 1px solid var(--hospital-green);
+            color: var(--white);
+            background-color: var(--hospital-green);
+            cursor: pointer;
+            font-size: var(--md);
+            font-weight: bold;
+        }
+        @media (min-width: 640px) {
+            .container {
+                width: 360px;
+                padding-bottom: 24px;
+                position: absolute;
+                right: 0;
+            }
         }
     </style>
 </head>
 <body>
     <aside class="container">
         <div class="close">
-            <img src="./icons/icon_close.png" alt="">
+            <img src="./icons/icon_close.png" alt="close">
         </div>
         <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" class="bike">
 
-        <div class="precio">
+        <div class="info">
             <p>$35,00</p>
             <p>Bike</p>
-        </div>
 
-        <div class="description">
             <p>With its functional and practical interior, this refrigerator also fulfills a decorative function, adding personality and a retro-vintage aesthetic to your kitchen or workplace</p>
+
+            <button class="primary-button">
+                <img src="./icons/bt_add_to_cart.svg" alt="shopping cart">
+                Add to cart
+            </button>
         </div>
-        <button class="primary-button">
-            Add to cart
-            <img src="./icons/bt_add_to_cart.svg" alt="shopping cart">
-        </button>
     </aside>
 </body>
 </html>
